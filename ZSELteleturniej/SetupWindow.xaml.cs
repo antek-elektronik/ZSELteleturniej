@@ -26,7 +26,6 @@ namespace ZSELteleturniej
             InitializeComponent();
         }
 
-
         public void ShowData()
         {
             foreach (string element in Ports)

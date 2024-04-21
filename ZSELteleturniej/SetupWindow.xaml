@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="SetupWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="comList" HorizontalAlignment="Left" Margin="13,161,0,0" VerticalAlignment="Top" Width="204" Height="21"/>
+        <ComboBox x:Name="comList" HorizontalAlignment="Left" Margin="13,155,0,0" VerticalAlignment="Top" Width="204" Height="21"/>
         <Label Content="ZSEL teleturniej setup" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="89" Width="506" FontSize="36"/>
         <Label Content="Wybierz port szeregowy:" HorizontalAlignment="Left" Margin="13,114,0,0" VerticalAlignment="Top" Height="36" Width="204" FontSize="16"/>
+        <Button Content="odśwież" HorizontalAlignment="Left" Height="25" Margin="13,192,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button Content="zatwierdź" HorizontalAlignment="Left" Height="25" Margin="122,192,0,0" VerticalAlignment="Top" Width="95"/>
     </Grid>
 </Window>
