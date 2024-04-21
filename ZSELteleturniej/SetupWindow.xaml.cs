@@ -41,12 +41,20 @@ namespace ZSELteleturniej
 
             if (arduinoPort != null) {
                 ArduinoFoundLabel.Content = "znaleziono Arduino na porcie: " + arduinoPort;
+            } 
+            else if(arduinoPort == "error")
+            {
+                ArduinoFoundLabel.Content = "napotkano problem";
+            }
+            else
+            {
+                ArduinoFoundLabel.Content = "nie znaleziono Arduino";
             }
 
             Cursor = Cursors.Arrow;
         }
 
-        private string AutodetectArduinoPort()
+        private string AutodetectArduinoPort()  //detect Arduino port from stackoverflow
         {
             ManagementScope connectionScope = new ManagementScope();
             SelectQuery serialQuery = new SelectQuery("SELECT * FROM Win32_SerialPort");
@@ -68,7 +76,7 @@ namespace ZSELteleturniej
             catch (ManagementException e)
             {
                 /* Do Nothing */
-                MessageBox.Show(e.Message,"zgłoszono wyjątek!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(e.Message,"zgłoszono wyjątek!", MessageBoxButton.OK, MessageBoxImage.Error); //report error to the user
                 return "error";
             }
 
@@ -77,13 +85,13 @@ namespace ZSELteleturniej
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Cursor = Cursors.Wait;
+            Cursor = Cursors.Wait; //change cursor for user to know that the app is working
             ShowData();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Cursor = Cursors.Wait;
+            Cursor = Cursors.Wait;  //change cursor for user to know that the app is working
             ShowData();
         }
     }
