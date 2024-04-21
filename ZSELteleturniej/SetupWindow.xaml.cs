@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO.Ports;
+using System.IO;
+using System.Management;
 
 namespace ZSELteleturniej
 {
@@ -33,5 +36,35 @@ namespace ZSELteleturniej
                 comList.Items.Add(element);
             }
         }
+
+        private string AutodetectArduinoPort()
+        {
+            ManagementScope connectionScope = new ManagementScope();
+            SelectQuery serialQuery = new SelectQuery("SELECT * FROM Win32_SerialPort");
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher(connectionScope, serialQuery);
+
+            try
+            {
+                foreach (ManagementObject item in searcher.Get())
+                {
+                    string desc = item["Description"].ToString();
+                    string deviceId = item["DeviceID"].ToString();
+
+                    if (desc.Contains("Arduino"))
+                    {
+                        return deviceId;
+                    }
+                }
+            }
+            catch (ManagementException e)
+            {
+                /* Do Nothing */
+                MessageBox.Show(e.Message,"zgłoszono wyjątek!", MessageBoxButton.OK, MessageBoxImage.Error);
+                return "error";
+            }
+
+            return null;
+        }
+
+        }
     }
-}
