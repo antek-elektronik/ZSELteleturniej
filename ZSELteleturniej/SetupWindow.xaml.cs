@@ -77,5 +77,10 @@ namespace ZSELteleturniej
         {
             ShowData();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ShowData();
+        }
     }
 }
