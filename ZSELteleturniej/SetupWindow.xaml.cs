@@ -66,5 +66,5 @@ namespace ZSELteleturniej
             return null;
         }
 
-        }
     }
+}

@@ -12,5 +12,6 @@
         <Label Content="Wybierz port szeregowy:" HorizontalAlignment="Left" Margin="13,114,0,0" VerticalAlignment="Top" Height="36" Width="204" FontSize="16"/>
         <Button Content="odśwież" HorizontalAlignment="Left" Height="25" Margin="13,192,0,0" VerticalAlignment="Top" Width="97"/>
         <Button Content="zatwierdź" HorizontalAlignment="Left" Height="25" Margin="122,192,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="ArduinoFoundLabel" Content="" HorizontalAlignment="Left" Margin="13,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,0.478" Width="204" Height="50"/>
     </Grid>
 </Window>
