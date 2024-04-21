@@ -42,6 +42,8 @@ namespace ZSELteleturniej
             if (arduinoPort != null) {
                 ArduinoFoundLabel.Content = "znaleziono Arduino na porcie: " + arduinoPort;
             }
+
+            Cursor = Cursors.Arrow;
         }
 
         private string AutodetectArduinoPort()
@@ -75,11 +77,13 @@ namespace ZSELteleturniej
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Cursor = Cursors.Wait;
             ShowData();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Cursor = Cursors.Wait;
             ShowData();
         }
     }
