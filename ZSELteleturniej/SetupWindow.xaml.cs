@@ -94,5 +94,10 @@ namespace ZSELteleturniej
             Cursor = Cursors.Wait;  //change cursor for user to know that the app is working
             ShowData();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
