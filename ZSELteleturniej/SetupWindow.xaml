@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZSELteleturniej"
         mc:Ignorable="d"
-        Title="SetupWindow" Height="450" Width="800">
+        Title="SetupWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <ComboBox x:Name="comList" HorizontalAlignment="Left" Margin="13,155,0,0" VerticalAlignment="Top" Width="204" Height="21"/>
         <Label Content="ZSEL teleturniej setup" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="89" Width="506" FontSize="36"/>
