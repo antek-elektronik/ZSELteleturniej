@@ -102,6 +102,7 @@ namespace ZSELteleturniej
             {
                 SelectedPort = comList.SelectedItem.ToString();
             }
+
         }
     }
 }
