@@ -22,7 +22,7 @@ namespace ZSELteleturniej
     /// </summary>
     public partial class SetupWindow : Window
     {
-        public List<string> Ports = new List<string>();
+        public string SelectedPort = null;
 
         public SetupWindow()
         {
@@ -31,10 +31,13 @@ namespace ZSELteleturniej
 
         public void ShowData()
         {
-            foreach (string element in Ports)
+            string[] ports = SerialPort.GetPortNames(); //get all the available com ports
+            foreach (string element in ports)
             {
                 comList.Items.Add(element);
             }
+
+
         }
 
         private string AutodetectArduinoPort()

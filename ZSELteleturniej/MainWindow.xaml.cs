@@ -50,14 +50,8 @@ namespace ZSELteleturniej
         {
             this.Hide();
             setupWindow = new SetupWindow(); //reset the setupWindow class
-
-            string[] ports = SerialPort.GetPortNames(); //get all the available com ports
-
-            setupWindow.Ports = ports.ToList<string>(); //pass them to the setup window
-
             setupWindow.Show();
-
-            setupWindow.ShowData();
+            
 
         }
     }
