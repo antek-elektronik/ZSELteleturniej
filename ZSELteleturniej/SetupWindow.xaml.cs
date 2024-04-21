@@ -83,21 +83,25 @@ namespace ZSELteleturniej
             return null;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e) 
         {
             Cursor = Cursors.Wait; //change cursor for user to know that the app is working
             ShowData();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) //refresh button
         {
             Cursor = Cursors.Wait;  //change cursor for user to know that the app is working
             ShowData();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e) //  continue button 
         {
-
+            MessageBoxResult result = MessageBox.Show("Czy chcesz kontynuować? Źle wybrany port uniemożliwi poprawne działanie programu!", "ostrzeżenie!", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                SelectedPort = comList.SelectedItem.ToString();
+            }
         }
     }
 }
