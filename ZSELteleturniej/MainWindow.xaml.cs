@@ -46,13 +46,21 @@ namespace ZSELteleturniej
 
         SetupWindow setupWindow = new SetupWindow();
 
+        string selectedPort = null;
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             this.Hide();
             setupWindow = new SetupWindow(); //reset the setupWindow class
-            setupWindow.Show();
-            
+            setupWindow.Closing += SetupWindow_Closing;
 
+            setupWindow.Show();
+
+        }
+
+        private void SetupWindow_Closing(object sender, EventArgs e)
+        {
+            selectedPort = setupWindow.SelectedPort;
         }
     }
 }
