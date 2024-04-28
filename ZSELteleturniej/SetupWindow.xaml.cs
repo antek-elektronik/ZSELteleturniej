@@ -100,7 +100,14 @@ namespace ZSELteleturniej
             MessageBoxResult result = MessageBox.Show("Czy chcesz kontynuować? Źle wybrany port uniemożliwi poprawne działanie programu!", "ostrzeżenie!", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
             {
-                SelectedPort = comList.SelectedItem.ToString();
+                try
+                {
+                    SelectedPort = comList.SelectedItem.ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("aplikacja napotkała błąd! Prawdopodobnie nie wybrano portu COM","Error",MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
 
         }
