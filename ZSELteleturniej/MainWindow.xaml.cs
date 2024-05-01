@@ -51,16 +51,37 @@ namespace ZSELteleturniej
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             this.Hide();
+            
+
+        }
+
+        private void SetupWindowSetup()
+        {
             setupWindow = new SetupWindow(); //reset the setupWindow class
             setupWindow.Closing += SetupWindow_Closing;
 
             setupWindow.Show();
-
         }
 
         private void SetupWindow_Closing(object sender, EventArgs e)
         {
-            selectedPort = setupWindow.SelectedPort;
+            if (setupWindow.WindowReady == true)
+            {
+                selectedPort = setupWindow.SelectedPort;
+            }
+            else
+            {
+                selectedPort = null;
+                MessageBoxResult result = MessageBox.Show("Nie wybrano portu, czy chcesz kontynuować", "Uwaga!", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.Yes)
+                {
+                    SetupWindowSetup();
+                }
+                else
+                {
+                    Application.Current.Shutdown();
+                }
+            }
         }
     }
 }
