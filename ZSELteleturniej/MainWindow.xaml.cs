@@ -68,6 +68,10 @@ namespace ZSELteleturniej
             if (setupWindow.WindowReady == true)
             {
                 selectedPort = setupWindow.SelectedPort;
+
+                //ONLY FOR DEBUGGING
+                OperatorWindow operatorWindow = new OperatorWindow();
+                operatorWindow.Show();
             }
             else
             {
