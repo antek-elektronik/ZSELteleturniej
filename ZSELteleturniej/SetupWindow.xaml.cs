@@ -22,7 +22,8 @@ namespace ZSELteleturniej
     /// </summary>
     public partial class SetupWindow : Window
     {
-        public string SelectedPort = null;
+        public string SelectedPort = null; //selected com port for example "COM1" "COM2"
+        public bool WindowReady = false; //
 
         public SetupWindow()
         {
@@ -110,6 +111,9 @@ namespace ZSELteleturniej
                 }
             }
 
+            Hide();
+
+            WindowReady = true;
         }
     }
 }
