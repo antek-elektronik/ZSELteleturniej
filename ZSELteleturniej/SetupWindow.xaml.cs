@@ -23,7 +23,7 @@ namespace ZSELteleturniej
     public partial class SetupWindow : Window
     {
         public string SelectedPort = null; //selected com port for example "COM1" "COM2"
-        public bool WindowReady = false; //
+        public bool WindowReady = false; //confirms that port was selected and app is ready for the next step
 
         public SetupWindow()
         {
