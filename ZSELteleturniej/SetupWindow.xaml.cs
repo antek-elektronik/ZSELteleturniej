@@ -107,13 +107,12 @@ namespace ZSELteleturniej
                 }
                 catch
                 {
-                    MessageBox.Show("aplikacja napotkała błąd! Prawdopodobnie nie wybrano portu COM","Error",MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("aplikacja napotkała błąd! Prawdopodobnie nie wybrano portu COM", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
 
-            Hide();
-
             WindowReady = true;
+            Close();
         }
     }
 }
