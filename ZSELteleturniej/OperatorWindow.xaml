@@ -4,42 +4,128 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZSELteleturniej"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="OperatorWindow" Height="450" Width="800">
+    <Window.Resources>
+        <System:Double x:Key="CollumnTopMarginVar">64</System:Double>
+    </Window.Resources>
     <Grid>
         <DockPanel Height="64" LastChildFill="False" VerticalAlignment="Top" Background="#FFF6F6F6"/>
-        <DockPanel LastChildFill="False" Margin="-1,64,0,0" HorizontalAlignment="Left" Width="68">
+
+        <!-- ===================================== -->
+        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 0-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar0}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,665,0" Width="68">
+
+        <!-- ===================================== -->
+
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 1-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar1}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,597,0" Width="68">
+
+        <!-- ===================================== -->
+        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 2-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar2}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,529,0" Width="68">
+
+        <!-- ===================================== -->
+
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 3-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar3}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,461,0" Width="68">
+
+        <!-- ===================================== -->
+        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 4-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar4}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,393,0" Width="68">
+
+        <!-- ===================================== -->
+        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 5-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar5}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,325,0" Width="68">
+
+        <!-- ===================================== -->
+        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 6-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar6}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,257,0" Width="68">
+
+        <!-- ===================================== -->
+        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 7-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar7}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,189,0" Width="68">
+
+        <!-- ===================================== -->
+
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 8-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar8}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,121,0" Width="68">
+
+        <!-- ===================================== -->
+
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 9-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar9}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,53,0" Width="68">
+
+        <!-- ===================================== -->
+
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
+            <!-- Collumn 10-->
+            <DockPanel.Margin>
+                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar10}" Right="0" />
+            </DockPanel.Margin>
             <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
         </DockPanel>
+
+        <!-- ===================================== -->
+
+
+
     </Grid>
 </Window>

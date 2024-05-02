@@ -52,7 +52,11 @@ namespace ZSELteleturniej
         {
             this.Hide();
 
-            SetupWindowSetup();
+            //SetupWindowSetup();
+
+            //ONLY FOR DEBUGGING
+            OperatorWindow operatorWindow = new OperatorWindow();
+            operatorWindow.Show();
         }
 
         private void SetupWindowSetup()
@@ -69,9 +73,7 @@ namespace ZSELteleturniej
             {
                 selectedPort = setupWindow.SelectedPort;
 
-                //ONLY FOR DEBUGGING
-                OperatorWindow operatorWindow = new OperatorWindow();
-                operatorWindow.Show();
+                
             }
             else
             {
