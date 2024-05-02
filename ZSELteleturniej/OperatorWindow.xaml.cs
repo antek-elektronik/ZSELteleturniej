@@ -64,6 +64,8 @@ namespace ZSELteleturniej
              * I wonder how many problems will it generate in future.....
              * 
              * - Antoni G. 03.05.2024
+             * 
+             * 
              */
 
             Resources.Clear(); //clear theese dummy resources from the xaml
@@ -83,12 +85,9 @@ namespace ZSELteleturniej
                 Resources.Add("CollumnWidthVar" + i.ToString(), collumnWidth * i); // some shady code to make it work
             }
 
-            this.Refresh();
+            
         }
 
-        private void Refresh()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

@@ -9,7 +9,7 @@
         Title="OperatorWindow" Height="533" Width="1180">
     <Window.Resources>
 
-        <!-- everything written here is only for the VS studio designer to stop crying. Any change here, wont have any affect on the compiled app, because all resources are removed and assigned again in c#-->
+        <!-- everything written here is only for the VS studio designer to stop crying. WARNING!!! ONLY FOR DEVELOPMENT, COMMENT-OFF EVERYTHING WHEN COMPILING!-->
         <System:Double x:Key="CollumnTopMarginVar">70</System:Double>
         <System:Double x:Key="CollumnBottomMarginVar">70</System:Double>
         <System:Double x:Key="CollumnWidthVar0">0</System:Double>
