@@ -23,9 +23,11 @@ namespace ZSELteleturniej
 
         public OperatorWindow()
         {
+            InitializeComponent();
+
             SetResources();
 
-            InitializeComponent();
+            
         }
 
         void SetResources() //hide it all in a nice function so nobody sees this abomination 
@@ -36,12 +38,25 @@ namespace ZSELteleturniej
              * yeah, yeah stupid solution, but do it better yourself then!
              * 
              * Here, on c# side I'm creating system resources before any window initialization or anything
-             * Then in xaml another one in resources section because why not?: 
-             * 
-             * <Window.Resources>
-                    <System:Double x:Key="CollumnTopMarginVar">64</System:Double>
-               </Window.Resources>
-             * 
+             * Then in xaml another one in resources section because VS designer cannot see that C# will assign the values and keeps f***ing up so I gave hin some dummy values to still be able to use designer and real values are assigned here, in c# code 
+             
+             <System:Double x:Key="CollumnTopMarginVar">70</System:Double>
+             <System:Double x:Key="CollumnBottomMarginVar">70</System:Double>
+             <System:Double x:Key="CollumnWidthVar0">0</System:Double>
+             <System:Double x:Key="CollumnWidthVar1">100</System:Double>
+             <System:Double x:Key="CollumnWidthVar2">200</System:Double>
+             <System:Double x:Key="CollumnWidthVar3">300</System:Double>
+             <System:Double x:Key="CollumnWidthVar4">400</System:Double>
+             <System:Double x:Key="CollumnWidthVar5">500</System:Double>
+             <System:Double x:Key="CollumnWidthVar6">600</System:Double>
+             <System:Double x:Key="CollumnWidthVar7">700</System:Double>
+             <System:Double x:Key="CollumnWidthVar8">800</System:Double>
+             <System:Double x:Key="CollumnWidthVar9">900</System:Double>
+             <System:Double x:Key="CollumnWidthVar">100</System:Double>
+            
+             *(this piece of code was created by subscript "xaml automation1.py")
+             *
+             *
              * so now we have a main CollumnMarginVar that contains every collumns width
              * then every single collumn gets their own system resource 
              * first one will have CollumnMarginVar0, second one CollumnMarginVar1, ... you get it
@@ -51,14 +66,29 @@ namespace ZSELteleturniej
              * - Antoni G. 03.05.2024
              */
 
-            double collumnWidth = 68; //this will be the base of our ui, every element will have this width
+            Resources.Clear(); //clear theese dummy resources from the xaml
 
-            Resources.Add("CollumnWidthVar", collumnWidth); //so we add this to our system resources to use it later in xaml
+            double collumnWidth = 50; //this will be the base of our ui, every element will have this width
+            double collumnTop = 70;
+            double collumnBottom = 70;
+
+
+            //so we add this to our system resources to use it later in xaml
+            Resources.Add("CollumnTopMarginVar", collumnTop); 
+            Resources.Add("CollumnWidthVar", collumnWidth); 
+            Resources.Add("CollumnBottomMarginVar", collumnBottom);
 
             for (int i = 0; i < 10; i++) //to save time writing the code, I made a loop creating all 10 system resources, every single one precisely collumnWidth from each other (every single one will have collumnWidth more margin from the right, not the best option but it should work)
             {
                 Resources.Add("CollumnWidthVar" + i.ToString(), collumnWidth * i); // some shady code to make it work
             }
+
+            this.Refresh();
+        }
+
+        private void Refresh()
+        {
+            throw new NotImplementedException();
         }
     }
 }
