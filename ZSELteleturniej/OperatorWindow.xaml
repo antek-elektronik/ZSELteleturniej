@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="OperatorWindow" Height="450" Width="800">
     <Grid>
-        <DockPanel Height="56" LastChildFill="False" VerticalAlignment="Top" Background="#FFF6F6F6"/>
+        <DockPanel Height="64" LastChildFill="False" VerticalAlignment="Top" Background="#FFF6F6F6"/>
+        <DockPanel LastChildFill="False" Margin="-1,64,0,0" HorizontalAlignment="Left" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,665,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,597,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,529,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,461,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,393,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,325,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,257,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,189,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,121,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" LastChildFill="False" Margin="0,64,53,0" Width="68">
+            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
+        </DockPanel>
     </Grid>
 </Window>
