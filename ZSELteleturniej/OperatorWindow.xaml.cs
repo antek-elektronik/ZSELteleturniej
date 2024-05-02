@@ -55,7 +55,7 @@ namespace ZSELteleturniej
 
             Resources.Add("CollumnWidthVar", collumnWidth); //so we add this to our system resources to use it later in xaml
 
-            for (int i = 0; i < 11; i++) //to save time writing the code, I made a loop creating all 10 system resources, every single one precisely collumnWidth from each other (every single one will have collumnWidth more margin from the right, not the best option but it should work)
+            for (int i = 0; i < 10; i++) //to save time writing the code, I made a loop creating all 10 system resources, every single one precisely collumnWidth from each other (every single one will have collumnWidth more margin from the right, not the best option but it should work)
             {
                 Resources.Add("CollumnWidthVar" + i.ToString(), collumnWidth * i); // some shady code to make it work
             }

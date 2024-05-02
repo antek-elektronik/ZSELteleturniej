@@ -115,15 +115,6 @@
 
         <!-- ===================================== -->
 
-        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="{StaticResource CollumnWidthVar}">
-            <!-- Collumn 10-->
-            <DockPanel.Margin>
-                <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="0" Left="{StaticResource CollumnWidthVar10}" Right="0" />
-            </DockPanel.Margin>
-            <Border BorderBrush="Black" BorderThickness="1" Width="68"/>
-        </DockPanel>
-
-        <!-- ===================================== -->
 
 
 
