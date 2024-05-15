@@ -35,7 +35,14 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar0}" Right="0" />
             </DockPanel.Margin>
-            <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
+
+
+            <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}">
+                <Border BorderBrush="Black" BorderThickness="1" Margin="-1,-1,-1,0" Height="40" VerticalAlignment="Top">
+                    <Label x:Name="player1label1" Content="Gracz 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+
+            </Border>
         </DockPanel>
 
         <!-- ===================================== -->
@@ -45,6 +52,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar1}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -55,6 +64,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar2}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -65,6 +76,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar3}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -75,6 +88,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar4}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -85,6 +100,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar5}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -95,6 +112,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar6}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -105,6 +124,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar7}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -115,6 +136,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar8}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
@@ -125,6 +148,8 @@
             <DockPanel.Margin>
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar9}" Right="0" />
             </DockPanel.Margin>
+
+
             <Border BorderBrush="Black" BorderThickness="1" Width="{StaticResource CollumnWidthVar}"/>
         </DockPanel>
 
