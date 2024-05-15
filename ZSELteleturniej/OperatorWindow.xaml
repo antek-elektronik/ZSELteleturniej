@@ -28,7 +28,9 @@
 
     </Window.Resources>
     <Grid>
-        <DockPanel Height="64" LastChildFill="False" VerticalAlignment="Top" Background="#FFF6F6F6"/>
+        <DockPanel Height="64" LastChildFill="False" VerticalAlignment="Top" Background="#FFF6F6F6">
+            <Label Content="Panel Operatora" Width="305" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Top"/>
+        </DockPanel>
 
         <!-- ===================================== -->
 
