@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZSELteleturniej"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+
         mc:Ignorable="d"
         Title="OperatorWindow" Height="533" Width="1180">
     <Window.Resources>
@@ -36,14 +38,16 @@
                 <Thickness Top="{StaticResource CollumnTopMarginVar}" Bottom="{StaticResource CollumnBottomMarginVar}" Left="{StaticResource CollumnWidthVar0}" Right="0" />
             </DockPanel.Margin>
 
+            
 
-            <Border BorderBrush="Black" BorderThickness="1,1,0,1" Width="{StaticResource CollumnWidthVar}">
+            <GroupBox BorderBrush="Black" BorderThickness="1,1,0,1" Width="{StaticResource CollumnWidthVar}">
+
                 <Border BorderBrush="Black" BorderThickness="1" Margin="-1,-1,-1,0" Height="40" VerticalAlignment="Top">
                     <Label x:Name="player1label1" Content="Gracz 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
-                
 
-            </Border>
+            </GroupBox>
+
         </DockPanel>
 
         <!-- ===================================== -->
