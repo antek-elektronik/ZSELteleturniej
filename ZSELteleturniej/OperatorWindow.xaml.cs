@@ -25,7 +25,7 @@ namespace ZSELteleturniej
         {
             InitializeComponent();
 
-            SetResources();
+            //SetResources();
 
             
         }
