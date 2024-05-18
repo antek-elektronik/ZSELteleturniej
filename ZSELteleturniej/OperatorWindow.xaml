@@ -40,18 +40,18 @@
         </Grid.ColumnDefinitions>
 
 
-        <DockPanel Grid.ColumnSpan="11" Grid.Column="0" Grid.Row="0"  Height="60" LastChildFill="False" VerticalAlignment="Top" Background="#FFF6F6F6">
+        <DockPanel Grid.ColumnSpan="11" Grid.Column="0"  Height="60" LastChildFill="False" VerticalAlignment="Center" Background="#FFF6F6F6">
             <Label Content="Panel Operatora" Width="305" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Top"/>
         </DockPanel>
 
-       
+
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Collumn 0-->
 
-            <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 1">
+            <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 1" >
                 <GroupBox Header="Punkty" Height="79" VerticalAlignment="Top">
                     <Grid>
                         <xctk:IntegerUpDown Height="28" VerticalAlignment="Top" />
@@ -65,7 +65,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="126,0,0,0">
             <!-- Collumn 1-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 2">
@@ -82,7 +82,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="126,0,0,0">
             <!-- Collumn 2-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 3">
@@ -99,7 +99,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="126,0,0,0">
             <!-- Collumn 3-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 4">
@@ -116,7 +116,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="126,0,0,0">
             <!-- Collumn 4-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 5">
@@ -133,7 +133,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="126,0,0,0">
             <!-- Collumn 5-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 6">
@@ -150,7 +150,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="6" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="6" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Collumn 6-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 7">
@@ -167,7 +167,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="7" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="7" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Collumn 7-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 8">
@@ -185,7 +185,7 @@
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="8" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="8" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Collumn 8-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 9">
@@ -197,12 +197,12 @@
                 </GroupBox>
 
             </GroupBox>
-            
+
         </DockPanel>
 
         <!-- ===================================== -->
 
-        <DockPanel Grid.Column="9" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <DockPanel Grid.Column="9" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Collumn 9-->
 
             <GroupBox BorderBrush="Black" BorderThickness="1,1,1,1" Width="{StaticResource CollumnWidth}" Padding="0,5,0,0" Header="Gracz 10">
