@@ -1,0 +1,16 @@
+﻿<Window x:Class="ZSELteleturniej.Links"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZSELteleturniej"
+        mc:Ignorable="d"
+        Title="Links" Height="450" Width="800">
+    <Grid>
+        <Label Content="Icons and other media&#xD;&#xA; sourced from: " HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="356" Margin="25,57,0,0" TextWrapping="Wrap" Text="https://icons8.com/icon/21102/services" VerticalAlignment="Top" Width="732" TextChanged="TextBox_TextChanged"/>
+
+
+
+    </Grid>
+</Window>

@@ -52,7 +52,7 @@ namespace ZSELteleturniej
         {
             this.Hide();
 
-            //SetupWindowSetup();
+            SetupWindowSetup();
 
             //ONLY FOR DEBUGGING
             OperatorWindow operatorWindow = new OperatorWindow();
